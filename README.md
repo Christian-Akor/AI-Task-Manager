@@ -180,6 +180,10 @@ A cron job runs daily at 9 AM to check for upcoming deadlines and send notificat
 - Helmet.js for HTTP headers security
 - CORS configuration
 - Input validation
+- **Rate Limiting:**
+  - General API: 100 requests per 15 minutes per IP
+  - Authentication routes: 5 requests per 15 minutes per IP
+  - Task creation: 10 requests per minute per IP
 
 ### Dark Mode
 Persistent theme preference using local storage and Tailwind's dark mode classes.
@@ -215,11 +219,11 @@ npm start  # Production mode
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for details on the security measures implemented and recommendations for production deployment.
 
 ## License
 
